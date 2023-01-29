@@ -21,36 +21,27 @@ function playRound(playerSelection, computerSelection) {
 
     if (playerSelection == "rock") {
         if (computerSelection == "rock") {
-            // return "Tie! Both of you chose Rock"
-            console.log("Tie! Both of you chose Rock");
+            return "Tie! Both of you chose Rock"
         } else if (computerSelection == "paper") {
-            // return "You lose! Paper wraps Rock"
-            console.log("You lose! Paper wraps Rock");
+            return "You lose! Paper wraps Rock"
         } else if (computerSelection == "scissors") {
-            // return "You win! Rock beats Scissors"
-            console.log("You win! Rock beats Scissors");
+            return "You win! Rock beats Scissors"
         }
     } else if (playerSelection == "paper") {
         if (computerSelection == "rock") {
-            // return "You win! Paper wraps Rock"
-            console.log("You win! Paper wraps Rock");
+            return "You win! Paper wraps Rock"
         } else if (computerSelection == "paper") {
-            // return "Tie! Both of you chose Paper"
-            console.log("Tie! Both of you chose Paper");
+            return "Tie! Both of you chose Paper"
         } else if (computerSelection == "scissors") {
-            // return "You lose, Scissors cuts Paper"
-            console.log("You lose, Scissors cuts Paper");
+            return "You lose, Scissors cuts Paper"
         }
     } else if (playerSelection == "scissors") {
         if (computerSelection == "rock") {
-            // return "You lose! Rock beats Scissors"
-            console.log("You lose! Rock beats Scissors");
+            return "You lose! Rock beats Scissors"
         } else if (computerSelection == "paper") {
-            // return "You win, Scissors cuts Paper"
-            console.log("You win, Scissors cuts Paper");
+            return "You win, Scissors cuts Paper"
         } else if (computerSelection == "scissors") {
-            // return "Tie! Both of you chose Scissors"
-            console.log("Tie! Both of you chose Scissors");
+            return "Tie! Both of you chose Scissors"
         }
     }
 }
@@ -58,4 +49,4 @@ function playRound(playerSelection, computerSelection) {
 let computerSelection = getComputerChoice();
 let playerSelection = " rOcK";
 
-playRound(playerSelection, computerSelection);
+console.log(playRound(playerSelection, computerSelection));
