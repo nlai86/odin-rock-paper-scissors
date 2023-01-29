@@ -9,22 +9,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="index.js"></script> 
-    <title>Odin - Rock Paper Scissors</title>
+    <title>Rock Paper Scissors - nlai86</title>
 </head>
 <body>
     <div class="header">
-        <h1>Rock, Paper, Scissors</h1>
-        <h3>by Nicholas Lai</h3>
+        <div class="top-line">
+            <div class="top-header">
+                <h1>Rock, Paper, Scissors</h1>
+            </div>
+            <div class="reset">
+                <button onclick = "resetGame()" type="button" class="reset-button">Reset Game</button>
+            </div>
+        </div>
+        <h3>by Nicholas Lai</h3>]
     </div>
     
     <div class="play-area">
-        <h2>Best 3 out of 5</h2>
-        <button type="Button">Rock</button>
-        <button type="Button">Paper</button>
-        <button type="Button">Scissors</button>
+        <div class="play-buttons"> 
+            <div class="rock"> 
+                <button onclick = "getUserRock()" type="Button" class="rock-button">
+                    <img src="images/rock.png" alt="picture of rock">
+                </button>
+            </div>
+            <div class="paper">
+                <button onclick = "getUserPaper()" type="Button" class="paper-button">
+                    <img src="images/paper.png" alt="picture of paper">
+                </button>
+            </div>
+            <div class="scissors">
+                <button onclick = "getUserScissors()" type="Button" class="scissors-button">
+                    <img src="images/scissors.png" alt="picture of scissors">
+                </button>
+            </div>
+        </div>
     </div>
-
     <div class="scoreline">
+        <h2>Best 3 out of 5</h2>
 
     </div>
 

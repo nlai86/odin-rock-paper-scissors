@@ -2,11 +2,36 @@ body {
     background-color: black;
 }
 
+.header {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-line {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.top-header {
+    position: absolute;
+}
+
+.reset {
+    padding-right: 25px;
+    flex: 0 1 auto;
+    margin-left: auto;
+}
+
 .header h1{
     color: white;
-    text-align: center;
     font-family: 'Quicksand';
     font-weight: 100;
+    font-size: 3.25em;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 .header h3 {
@@ -17,10 +42,73 @@ body {
 }
 
 .play-area {
-    padding-top: 3.125em;
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .play-area h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 100;
+}
+
+.play-buttons {
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.play-buttons button {
+    padding: 0;
+    border: none;
+    background: none;
+	background-color:#000000;
+	border-radius:30px;
+	border:2px solid #ffffff;
+	cursor:pointer;
+	color:#ffffff;
+	padding:15px 15px; 
+	text-decoration:none;
+    
+}
+
+.play-buttons button:hover {
+    border:2px solid #3d00c2;
+}
+
+.play-buttons button:active {
+	position:relative;
+	top:3px;
+}
+
+.reset-button {
+	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+	background-color:#000000;
+	border-radius:30px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'Quicksand';
+    font-weight: 100;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+
+.reset-button:hover {
+    border:2px solid #3d00c2;
+}
+
+.reset-button:active {
+	position:relative;
+	top:3px;
+}
+
+.scoreline h2 {
     color: white;
     text-align: center;
     font-family: 'Quicksand';
@@ -36,3 +124,8 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+
+
+
+        

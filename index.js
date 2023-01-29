@@ -1,3 +1,22 @@
+let userInput;
+
+function getUserRock(){
+    userInput = "Rock";
+}
+
+function getUserPaper() {
+    userInput = "Paper";
+}
+
+function getUserScissors() {
+    userInput = "Scissors";
+}
+
+function resetGame() {
+
+}
+
+
 function getComputerChoice() {
 
     let choice = getRandomInt();
@@ -56,7 +75,6 @@ function playRound(playerSelection, computerSelection) {
 
 function game() {
 
-    let playerSelection; 
     let round; 
     let playerScore = 0;
     let computerScore = 0;
@@ -65,8 +83,7 @@ function game() {
 
     for (let i = 1; i < 6; i++) {
         console.log("Round Number: " + i);
-        playerSelection = prompt("Choose one: Rock, Paper, or Scissors"); 
-        round = playRound(playerSelection, getComputerChoice());
+        round = playRound(userInput, getComputerChoice());
         res = result(round);
         if (res == "loss") {
             computerScore = ++computerScore;
@@ -87,4 +104,11 @@ function game() {
 
 }
 
-// game();
+while (health > 0) {
+    if (buttonWasPressed) {
+        buttonWasPressed = false;
+    }
+ }
+
+
+game();
