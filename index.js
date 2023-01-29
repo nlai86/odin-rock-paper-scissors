@@ -11,6 +11,14 @@ function getComputerChoice() {
     }
 }
 
+function result(gameResult) {
+    if (gameResult.slice(0, 8) == "You lose") {
+        return "loss";
+    } else if (gameResult.slice(0, 7) == "You win") {
+        return "win";
+    }
+}
+
 function getRandomInt(min = 1, max = 4) {
     return Math.floor(Math.random() * (max - min) + min);
 }
@@ -46,7 +54,40 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-let computerSelection = getComputerChoice();
-let playerSelection = " rOcK";
+function game() {
 
-console.log(playRound(playerSelection, computerSelection));
+    let playerSelection; 
+    let round; 
+    let playerScore = 0;
+    let computerScore = 0;
+    let res; 
+
+
+    for (let i = 1; i < 6; i++) {
+        console.log("Round Number: " + i);
+        playerSelection = prompt("Choose one: Rock, Paper, or Scissors"); 
+        round = playRound(playerSelection, getComputerChoice());
+        res = result(round);
+        if (res == "loss") {
+            computerScore = ++computerScore;
+        } else if (res == "win") {
+            playerScore = ++playerScore;
+        }
+        console.log(round);
+        console.log("Score: " + playerScore + "-" + computerScore);
+    }
+
+    if (playerScore == computerScore) {
+        console.log("Game Over, Tie!")
+        console.log("Score: " + playerScore + "-" + computerScore);
+    } else if (playerScore > computerScore) {
+        console.log("Game Over, You Win!")
+        console.log("Score: " + playerScore + "-" + computerScore);
+    } else if (playerScore < computerScore) {
+        console.log("Game Over, You Lose!")
+        console.log("Score: " + playerScore + "-" + computerScore);
+    }
+
+}
+
+game();
