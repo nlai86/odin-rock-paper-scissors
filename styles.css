@@ -9,7 +9,18 @@ body {
     font-weight: 100;
 }
 
-.header h2 {
+.header h3 {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 100;
+}
+
+.play-area {
+    padding-top: 3.125em;
+}
+
+.play-area h2 {
     color: white;
     text-align: center;
     font-family: 'Quicksand';
