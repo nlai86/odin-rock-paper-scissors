@@ -74,7 +74,6 @@ function game() {
             playerScore = ++playerScore;
         }
         console.log(round);
-        console.log("Score: " + playerScore + "-" + computerScore);
     }
 
     if (playerScore == computerScore) {
