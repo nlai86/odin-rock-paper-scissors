@@ -74,17 +74,15 @@ function game() {
             playerScore = ++playerScore;
         }
         console.log(round);
+        console.log("Score: " + playerScore + "-" + computerScore);
     }
 
     if (playerScore == computerScore) {
         console.log("Game Over, Tie!")
-        console.log("Score: " + playerScore + "-" + computerScore);
     } else if (playerScore > computerScore) {
         console.log("Game Over, You Win!")
-        console.log("Score: " + playerScore + "-" + computerScore);
     } else if (playerScore < computerScore) {
         console.log("Game Over, You Lose!")
-        console.log("Score: " + playerScore + "-" + computerScore);
     }
 
 }
