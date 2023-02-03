@@ -34,15 +34,65 @@ body {
     text-align: center;
 }
 
-.header h3 {
+.header h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 100;
+    margin-bottom: 2em;
+}
+
+
+.reset-button {
+	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
+	background-color:#000000;
+	border-radius:30px;
+	border:2px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'Quicksand';
+    font-weight: 100;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+}
+
+.reset-button:hover {
+    border:2px solid #3d00c2;
+}
+
+.reset-button:active {
+	position:relative;
+	top:3px;
+}
+
+.scoreline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.scoreline h1 {
     color: white;
     text-align: center;
     font-family: 'Quicksand';
     font-weight: 100;
 }
 
+.prompt h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand';
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
+
 .play-area {
-    padding-top: 6em;
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,48 +134,21 @@ body {
 	top:3px;
 }
 
-.reset-button {
-	background:linear-gradient(to bottom, #000000 5%, #000000 100%);
-	background-color:#000000;
-	border-radius:30px;
-	border:2px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-    font-family: 'Quicksand';
-    font-weight: 100;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-}
-
-.reset-button:hover {
-    border:2px solid #3d00c2;
-}
-
-.reset-button:active {
-	position:relative;
-	top:3px;
-}
-
-.scoreline h2 {
-    color: white;
+.footer {
     text-align: center;
-    font-family: 'Quicksand';
-    font-weight: 100;
-}
-
-.footer p {
-    color: white;    
-    text-align: center;
-    font-family: 'Quicksand';
-    font-weight: 100;
-    position: fixed;
     bottom: 0;
     width: 100%;
+    position: fixed;
+    margin-bottom: 30px;
 }
 
-
+.footer h3 {
+    color: white;
+    font-family: 'Quicksand';
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+}
 
 
         

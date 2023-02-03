@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="index.js"></script> 
-    <title>Rock Paper Scissors - nlai86</title>
+    <script src="index.js" defer></script> 
+    <title>Rock Paper Scissors - Nicholas Lai</title>
 </head>
 <body>
     <div class="header">
@@ -18,38 +18,47 @@
                 <h1>Rock, Paper, Scissors</h1>
             </div>
             <div class="reset">
-                <button onclick = "resetGame()" type="button" class="reset-button">Reset Game</button>
+                <button type="button" class="reset-button">Reset Game</button>
             </div>
         </div>
-        <h3>by Nicholas Lai</h3>]
+        <h2>First person to win 5 rounds wins the game!</h2>
     </div>
-    
+    <div class="prompt">
+        <h1>Click a button to begin!</h1>
+    </div>
+    <div class="scoreline">
+        <div class="player-score">
+            <h1>0</h1>
+        </div>
+        <div class="dash">
+            <h1>-</h1>
+        </div>
+        <div class="computer-score">    
+            <h1>0</h1>
+        </div>
+    </div>
     <div class="play-area">
         <div class="play-buttons"> 
             <div class="rock"> 
-                <button onclick = "getUserRock()" type="Button" class="rock-button">
+                <button type="Button" class="rock-button">
                     <img src="images/rock.png" alt="picture of rock">
                 </button>
             </div>
             <div class="paper">
-                <button onclick = "getUserPaper()" type="Button" class="paper-button">
+                <button type="Button" class="paper-button">
                     <img src="images/paper.png" alt="picture of paper">
                 </button>
             </div>
             <div class="scissors">
-                <button onclick = "getUserScissors()" type="Button" class="scissors-button">
+                <button type="Button" class="scissors-button">
                     <img src="images/scissors.png" alt="picture of scissors">
                 </button>
             </div>
         </div>
     </div>
-    <div class="scoreline">
-        <h2>Best 3 out of 5</h2>
-
-    </div>
 
     <div class="footer"> 
-        <p>Last Updated: Jan 29, 2023</p>
+        <h3>Created by Nicholas Lai</h3>
     </div>
 </body>
 </html>
